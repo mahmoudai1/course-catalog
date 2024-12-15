@@ -13,8 +13,7 @@
 - Followed UI/UX best practices with multiple media queries.
 
 ## APIs
-APIs requests and responses are handled and managed dynamically.<br/><br/>
-Only 3 APIs are used to get categories and courses (`getCategoriesTree`, `getCourses`, `getCoursesByCategoryId`)
+APIs requests and responses are handled and managed dynamically.<br/>
 - `/getCategories`
 - `/getCategoryById`
 - `/getCategoriesTree` (To get categories in a way that can be easily hierarched in the side panel)
