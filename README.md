@@ -16,7 +16,7 @@
 APIs requests and responses are handled and managed dynamically.
 - `/getCategories`
 - `/getCategoryById`
-- `/getCategoriesTree` (To get categories in a way that can be easily hierarchiced in the side panel)
+- `/getCategoriesTree` (To get categories in a way that can be easily hierarched in the side panel)
 - `/updateCountsOfCourses` (To fill `count_of_courses` column and use less queries at fetching)
   
 - `/getCourses`
