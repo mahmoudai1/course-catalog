@@ -1,9 +1,9 @@
 # Table of Contents
-- [Overview](https://github.com/mahmoudai1/course-catalog?tab=readme-ov-file#overview)
-- [Design](https://github.com/mahmoudai1/course-catalog?tab=readme-ov-file#design)
-- [APIs](https://github.com/mahmoudai1/course-catalog?tab=readme-ov-file#apis)
-- [Project Structure]()
-- [Demo](https://github.com/mahmoudai1/course-catalog?tab=readme-ov-file#demo)
+- [Overview](#overview)
+- [Design](#design)
+- [APIs](#apis)
+- [Project Structure](#project-structure)
+- [Demo](#demo)
 
   
 ## Overview
