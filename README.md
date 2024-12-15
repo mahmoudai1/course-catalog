@@ -7,7 +7,7 @@
 
   
 ## Overview
-- As simple as it is.
+- As simple as it requires.
 - No useless files/folders.
 - No frontend/backend frameworks.
 - Only pure PHP and JS written in a clean code with a clean and clear structure.
