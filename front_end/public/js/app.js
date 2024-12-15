@@ -75,50 +75,56 @@ function updateCategories(categories){
   })
 }
 
-function updateCourses(courses, categoryId = null){  
+function updateCourses(courses, categoryId = null){
   let coursesWrapper = document.getElementById('courses-wrapper');
-  coursesWrapper.innerHTML = '';
 
-  courses.forEach((course) => {
-    const courseDiv = document.createElement('div');
-    courseDiv.className = "course";
-
-    const courseImgAndMainCategory = document.createElement('div');
-    courseImgAndMainCategory.className = "course-img-and-main-category";
-
-    const img = document.createElement('img');
-    img.src = course.preview;
-    img.alt = course.name;
-    img.loading = 'lazy';
-
-    const courseMainCategory = document.createElement('div');
-    courseMainCategory.innerHTML = course.main_category_name;
-
-    courseImgAndMainCategory.appendChild(img);
-    courseImgAndMainCategory.appendChild(courseMainCategory);
-
-
-    const courseInfo = document.createElement('div');
-    courseInfo.className = 'course-info';
-
-    const courseNameH3 = document.createElement('h3');
-    courseNameH3.className = 'course-name';
-    courseNameH3.innerHTML = truncateTextForDesktopLayout(course.name);
-    courseNameH3.title = course.name;
-
-    const courseDescription = document.createElement('p');
-    courseDescription.className = 'course-description';
-    courseDescription.innerHTML = truncateTextForDesktopLayout(course.description);
-    courseDescription.title = course.description;
-
-    courseInfo.appendChild(courseNameH3);
-    courseInfo.appendChild(courseDescription);
-
-    courseDiv.appendChild(courseImgAndMainCategory);
-    courseDiv.appendChild(courseInfo);
-
-    coursesWrapper.appendChild(courseDiv);
-  });
+  if(courses.length > 0){
+    coursesWrapper.innerHTML = '';
+  
+    courses.forEach((course) => {
+      const courseDiv = document.createElement('div');
+      courseDiv.className = "course";
+  
+      const courseImgAndMainCategory = document.createElement('div');
+      courseImgAndMainCategory.className = "course-img-and-main-category";
+  
+      const img = document.createElement('img');
+      img.src = course.preview;
+      img.alt = course.name;
+      img.loading = 'lazy';
+  
+      const courseMainCategory = document.createElement('div');
+      courseMainCategory.innerHTML = course.main_category_name;
+  
+      courseImgAndMainCategory.appendChild(img);
+      courseImgAndMainCategory.appendChild(courseMainCategory);
+  
+  
+      const courseInfo = document.createElement('div');
+      courseInfo.className = 'course-info';
+  
+      const courseNameH3 = document.createElement('h3');
+      courseNameH3.className = 'course-name';
+      courseNameH3.innerHTML = truncateTextForDesktopLayout(course.name);
+      courseNameH3.title = course.name;
+  
+      const courseDescription = document.createElement('p');
+      courseDescription.className = 'course-description';
+      courseDescription.innerHTML = truncateTextForDesktopLayout(course.description);
+      courseDescription.title = course.description;
+  
+      courseInfo.appendChild(courseNameH3);
+      courseInfo.appendChild(courseDescription);
+  
+      courseDiv.appendChild(courseImgAndMainCategory);
+      courseDiv.appendChild(courseInfo);
+  
+      coursesWrapper.appendChild(courseDiv);
+    });
+  } else {
+    coursesWrapper.innerHTML = 'No courses found for this category.';
+    coursesWrapper.style.color = "gray";
+  }
 
   localStorage.setItem("selectedCategory", categoryId);
 }
