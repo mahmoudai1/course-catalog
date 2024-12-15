@@ -1,7 +1,11 @@
-# Course Catalog
+# Table of Contents
+- [Overview](https://github.com/mahmoudai1/course-catalog?tab=readme-ov-file#overview)
+- [Design](https://github.com/mahmoudai1/course-catalog?tab=readme-ov-file#design)
+- [APIs](https://github.com/mahmoudai1/course-catalog?tab=readme-ov-file#apis)
+- [Project Structure]()
+- [Demo](https://github.com/mahmoudai1/course-catalog?tab=readme-ov-file#demo)
 
-### Please watch the demo at the end of the page for a quick overview.
-
+  
 ## Overview
 - As simple as it is.
 - No useless files/folders.
@@ -26,6 +30,10 @@ APIs requests and responses are handled and managed dynamically.<br/>
 
 - `/migrate` (Migerate all migrations files that is not migrated yet)
 - `/rollback` (Rollback all migrated migrations within last minute)
+
+## Project Structure
+<img width="469" alt="Screenshot 2024-12-16 at 12 06 36 AM" src="https://github.com/user-attachments/assets/3bb17f64-9525-49aa-a416-b394b5ae7614" />
+
 
 # Demo
 
