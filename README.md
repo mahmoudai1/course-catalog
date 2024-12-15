@@ -12,7 +12,7 @@
 - Simple, modern, and light weighted design.
 - Followed UI/UX best practices with multiple media queries.
 
-## APIs `/v1`
+## APIs
 APIs requests and responses are handled and managed dynamically.
 - `/getCategories`
 - `/getCategoryById`
