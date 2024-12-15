@@ -17,12 +17,12 @@ APIs requests and responses are handled and managed dynamically.
 - `/getCategories`
 - `/getCategoryById`
 - `/getCategoriesTree` (To get categories in a way that can be easily hierarchiced in the side panel)
-- `/updateCountsOfCourses` (To use fill `count_of_courses` column and use less queries at fetching)
+- `/updateCountsOfCourses` (To fill `count_of_courses` column and use less queries at fetching)
   
 - `/getCourses`
 - `/getCourseById`
 - `/getCoursesByCategoryId` (To get the courses of children categories)
-- `/updateMainCategoriesNames` (To use fill `main_category_name` column and use less queries at fetching)
+- `/updateMainCategoriesNames` (To fill `main_category_name` column and use less queries at fetching)
 
 - `/migrate` (Migerate all migrations files that is not migrated yet)
 - `/rollback` (Rollback all migrated migrations within last minute)
