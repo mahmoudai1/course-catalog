@@ -19,7 +19,7 @@
 
 ## APIs
 APIs requests and responses are handled and managed dynamically.<br/><br/>
-**-> The used APIs are cached using JS Session Storage in order to minimize sql queries calls.**<br/>
+**The used APIs are cached using JS Session Storage in order to minimize sql queries calls.**<br/><br/>
 - `/getCategories`
 - `/getCategoryById`
 - `/getCategoriesTree` (To get categories in a way that can be easily hierarched in the side panel)
