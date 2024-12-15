@@ -1,4 +1,6 @@
-# course-catalog
+# Course Catalog
+
+### Please watch the demo at the end of the page for a quick overview.
 
 ## Overview
 - As simple as it is.
