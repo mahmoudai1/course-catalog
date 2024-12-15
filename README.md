@@ -18,16 +18,17 @@
 - Followed UI/UX best practices with multiple media queries.
 
 ## APIs
-APIs requests and responses are handled and managed dynamically.<br/>
+APIs requests and responses are handled and managed dynamically.<br/><br/>
+**-> The used APIs are cached using JS Session Storage in order to minimize sql queries calls.**<br/>
 - `/getCategories`
 - `/getCategoryById`
 - `/getCategoriesTree` (To get categories in a way that can be easily hierarched in the side panel)
-- `/updateCountsOfCourses` (To fill `count_of_courses` column and use less queries at fetching)
+- `/updateCountsOfCourses` (To fill `count_of_courses` column and use less queries at fetching, can act as a trigger)
   
 - `/getCourses`
 - `/getCourseById`
 - `/getCoursesByCategoryId` (To get the courses of children categories)
-- `/updateMainCategoriesNames` (To fill `main_category_name` column and use less queries at fetching)
+- `/updateMainCategoriesNames` (To fill `main_category_name` column and use less queries at fetching, can act as a trigger)
 
 - `/migrate` (Migerate all migrations files that is not migrated yet)
 - `/rollback` (Rollback all migrated migrations within last minute)
