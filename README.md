@@ -13,6 +13,7 @@
 - Only pure PHP and JS written in a clean code with a clean and clear structure.
 
 ## Design
+- Pure HTML and CSS.
 - Simple, modern, and light design.
 - Followed UI/UX best practices with multiple media queries.
 
