@@ -44,8 +44,12 @@ class CategoryAPIs extends APIClient {
   }
 
   async getCategoriesTreeAPI() {
-    // cache to optimize
-      return await this.get(`/api.php/v1/getCategoriesTree`);
+    let data = sessionStorage.getItem("categories-tree");
+    if(data){
+        return await JSON.parse(data);
+    }
+
+    return await this.get(`/api.php/v1/getCategoriesTree`);
   }
 }
 
@@ -55,12 +59,20 @@ class CourseAPIs extends APIClient {
     }
   
     async getCoursesAPI() {
-        // cache to optimize
+        let data = sessionStorage.getItem("courses");
+        if(data){
+            return await JSON.parse(data);
+        }
+
         return await this.get(`/api.php/v1/getCourses`);
     }
 
     async getCoursesByCategoryIdAPI(categoryId) {
-        // cache to optimize
+        let data = sessionStorage.getItem("courses-by-category-" + categoryId);
+        if(data){
+            return await JSON.parse(data);
+        }
+
         return await this.get(`/api.php/v1/getCoursesByCategoryId?id=` + categoryId);
     }
   }
@@ -73,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     categoryAPIs.getCategoriesTreeAPI().then((response) => {
         if(response.code === 200){
+            setSessionStorage("categories-tree", response);
             updateCategories(response.data);
         } else {
             updateCategories([]);
@@ -84,6 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     courseAPIs.getCoursesAPI().then((response) => {
         if(response.code === 200){
+            setSessionStorage("courses", response);
             updateCourses(response.data);
         } else {
             updateCourses([]);
@@ -103,6 +117,7 @@ function getCoursesByCategoryIdClicked(categoryId){
     if(selectedCategory !== categoryId){
         courseAPIs.getCoursesByCategoryIdAPI(categoryId).then((response) => {
             if(response.code === 200){
+                setSessionStorage("courses-by-category-" + categoryId, response);
                 updateCourses(response.data, categoryId);
             } else {
                 updateCourses([]);
@@ -110,5 +125,12 @@ function getCoursesByCategoryIdClicked(categoryId){
         }).catch((error) => {
             console.error('Error fetching data:', error);
         });
+    }
+}
+
+function setSessionStorage(key, responseData){
+    let data = sessionStorage.getItem(key);
+    if(!data){
+        sessionStorage.setItem(key, JSON.stringify(responseData));
     }
 }
