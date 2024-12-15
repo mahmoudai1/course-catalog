@@ -9,7 +9,7 @@
 - Only pure PHP and JS written in a clean code with a clean and clear structure.
 
 ## Design
-- Simple, modern, and light weighted design.
+- Simple, modern, and light design.
 - Followed UI/UX best practices with multiple media queries.
 
 ## APIs
