@@ -15,7 +15,7 @@
 ## Design
 - Pure HTML and CSS.
 - Simple, modern, and light design.
-- Followed UI/UX best practices with multiple media queries.
+- Followed UI/UX best practices with different media queries.
 
 ## APIs
 APIs requests and responses are handled and managed dynamically.<br/><br/>
