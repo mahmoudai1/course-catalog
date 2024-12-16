@@ -18,7 +18,7 @@
 - Followed UI/UX best practices with different media queries.
 
 ## APIs
-APIs requests and responses are validated, organized, handled, and managed dynamically.<br/><br/>
+APIs requests and responses structure are validated, organized, handled, and managed dynamically.<br/><br/>
 **The used APIs to get categories and courses are cached using JS Session Storage in order to minimize sql queries calls.**<br/><br/>
 - `/getCategories`
 - `/getCategoryById`
