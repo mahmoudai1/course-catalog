@@ -30,8 +30,8 @@ APIs requests and responses structure are validated, organized, handled, and man
 - `/getCoursesByCategoryId` (To get the courses of children categories)
 - `/updateMainCategoriesNames` (To fill `main_category_name` column and use less queries at fetching, can act as a trigger)
 
-- `/migrate` (Migerate all migrations files that is not migrated yet)
-- `/rollback` (Rollback all migrated migrations within last minute)
+- `/migrate` (Migerate all DB migrations files that is not migrated yet)
+- `/rollback` (Rollback DB migrated migrations within last minute)
 
 ## Project Structure
 <img width="469" alt="Screenshot 2024-12-16 at 12 06 36 AM" src="https://github.com/user-attachments/assets/3bb17f64-9525-49aa-a416-b394b5ae7614" />
