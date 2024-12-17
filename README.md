@@ -7,7 +7,7 @@
 - [Demo Video](#demo)
 
 ## How to run
-- After running Docker, cd to the project_folder and run `docker-compose up --build`, accessiblle through (`http://cc.localhost/`) to try it.
+- After running Docker, cd to the project_folder and run `docker-compose up --build` (accessiblle through `http://cc.localhost/`).
 
 ## Overview
 - As simple as it requires.
