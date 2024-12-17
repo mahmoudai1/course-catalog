@@ -1,11 +1,14 @@
 # Table of Contents
+- [How to run](#how-to-run)
 - [Overview](#overview)
 - [Design](#design)
 - [APIs](#apis)
 - [Project Structure](#project-structure)
 - [Demo Video](#demo)
 
-  
+## How to run
+- cd to the project_folder and run `docker-compose up --build` to try it.
+
 ## Overview
 - As simple as it requires.
 - No useless files/folders.
